@@ -24,13 +24,11 @@ public class MyJobIntentService extends JobIntentService {
     @Override
     public void onCreate() {
         super.onCreate();
-        Toast.makeText(this, "Job Execution Started", Toast.LENGTH_SHORT).show();
+        showToast("Job Execution Started");
     }
 
     @Override
     protected void onHandleWork(@NonNull Intent intent) {
-
-        //
         /**
          * Write code here.. Perform Long operation here such as Download/Upload of file, Sync Some data
          * The system or framework is already holding a wake lock for us at this point
