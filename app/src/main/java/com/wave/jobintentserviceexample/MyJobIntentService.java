@@ -36,7 +36,7 @@ public class MyJobIntentService extends JobIntentService {
 
         int maxCount = intent.getIntExtra("maxCountValue", -1);
         /**
-         * Suppose we are performing task 1 to 1000, Each task will takes time 1 sec , So You saw we sleep thread or one second.
+         * Suppose we want to print 1 to 1000 number with one-second interval, Each task will take time 1 sec, So here now sleeping thread for one second.
          */
         for (int i = 0; i < maxCount; i++) {
             Log.d(TAG, "onHandleWork: The number is: " + i);
